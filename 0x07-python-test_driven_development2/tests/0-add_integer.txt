@@ -1,0 +1,24 @@
+def add_integer(a, b=98):
+...     if type(a) not in [int, float]:
+...             raise TypeError('a should be an integer')
+...     if type(b) not in [int, float]:
+...             raise TypeError('b should be an integer')
+...     return int(a+b)
+...
+>>> add_integer('a')
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "<stdin>", line 3, in add_integer
+TypeError: a should be an integer
+>>> add_integer(0,0)
+0
+>>> add_integer(2)
+100
+>>> add_integer(-2, 5)
+3
+>>> add_integer(-1, -1)
+-2
+>>> add_integer(2, -5)
+-3
+>>> add_integer(-2)
+96
