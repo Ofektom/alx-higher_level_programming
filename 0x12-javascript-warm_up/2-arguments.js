@@ -4,7 +4,7 @@ const args = process.argv.slice(2);
 
 let argCount = 0;
 
-for (const arg of args) {
+for (let i = 0; i < args.length; i++) {
   argCount++;
 }
 
